@@ -1,0 +1,95 @@
+@use 'variables' as *;
+
+// Multi Step Form
+.multi-step-form-wrapper {
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.multi-step-form-wrapper form {
+    background-color: whitesmoke;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+
+.multi-step-form-wrapper .form-progress {
+    margin-bottom: 20px;
+}
+
+.multi-step-form-wrapper .form-progress p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.multi-step-form-wrapper .form-progress .progress {
+    border-radius: 50px;
+    background-color: #333c4e;
+    height: 20px;
+}
+
+.multi-step-form-wrapper .form-progress .progress-bar {
+    background-color: $theme-color;
+}
+
+.main-label {
+    font-weight: bold;
+}
+
+.multi-step-form-wrapper .custom-control.custom-radio {
+    margin-bottom: 10px;
+}
+
+.multi-step-form-wrapper .custom-control.custom-checkbox {
+    margin-bottom: 10px;
+}
+
+.form-step-title {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.form-step-title-helper {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.multi-step-form-wrapper .form-control:focus {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: 1px solid lightgray;
+}
+
+#canvasDiv {
+	border-bottom: 2px dashed lightgray;
+}
+.group-signature {
+	position: relative;
+}
+
+#reset-btn {
+	position: absolute;
+	right: 0;
+	bottom: 22px;
+}
+
+.signature-pad--body {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	border-bottom: 2px dotted gray;
+}
+
+.signature-pad--body canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.signature-pad--body button {
+	position: absolute;
+	top: 100%;
+	right: -1px;
+}
