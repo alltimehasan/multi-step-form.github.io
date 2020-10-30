@@ -45,6 +45,12 @@ p {
   letter-spacing: 1px;
 }
 
+.my-btn-outline {
+  background-color: transparent;
+  color: #80040b;
+  border: 1px solid #80040b;
+}
+
 .my-btn:hover {
   background-color: #61060c;
   color: #fff;
@@ -169,6 +175,33 @@ p {
   position: absolute;
   top: 100%;
   right: -1px;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #80040b;
 }
 
 @media (max-width: 575px) {
