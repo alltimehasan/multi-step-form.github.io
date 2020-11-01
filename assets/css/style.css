@@ -87,6 +87,29 @@ p {
   background-color: #fff;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   padding: 15px;
+  position: relative;
+  padding-top: 70px;
+}
+
+.form-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #80040b;
+  padding: 5px 35px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.form-badge::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid #80040b;
+  border-right: 15px solid transparent;
 }
 
 .multi-step-form-wrapper form {
