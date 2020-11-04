@@ -40,13 +40,13 @@
 			<div class="row">
 				
 				<div class="col-md-12">
-					<div class="multi-step-form-wrapper">
+					<div class="multi-step-form-wrapper" style="background: #b2bec3;">
 						<h3 class="form-badge">Career</h3>
 						<div class="form-details">
 							<p>Thank you for your interest. We are actively seeking licensed quality security officers for employment. Please fill out the form below and we will contact you regarding employment opportunities.</p>
 							<p></p><strong>All positions require a Security License from your respected State where you are seeking employment.</strong></p>
 						</div>
-						<form action="" id="regForm">
+						<form action="" id="regForm" style="background: #fdcb6e;">
 							<!-- <div class="form-progress">
 								<p>Step 1 of 8</p>
 								<div class="progress">

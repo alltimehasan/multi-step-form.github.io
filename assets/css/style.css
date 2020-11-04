@@ -84,7 +84,7 @@ p {
 }
 
 .multi-step-form-wrapper {
-  background-color: #fff;
+  background-color: #b2bec3;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   padding: 15px;
   position: relative;
@@ -113,7 +113,7 @@ p {
 }
 
 .multi-step-form-wrapper form {
-  background-color: whitesmoke;
+  background-color: #fdcb6e;
   padding: 15px;
   border: 1px solid lightgray;
 }
