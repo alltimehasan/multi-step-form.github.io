@@ -696,7 +696,7 @@
 							<!-- Step Eight Start -->
 							<div class="tab step-eight">
 								<div class="form-group">
-									<label for="" class="main-label">From (check all that apply)</label>
+									<label for="" class="main-label">From (check all that apply)*</label>
 									<div class="custom-control custom-checkbox">
 										<input type="checkbox" id="customCheckbox8" name="agreement" value="Agreements" class="custom-control-input required" required>
 										<label class="custom-control-label" for="customCheckbox8">I certify that the facts contained in this application are true and complete to the best of my knowledge. I understand that if I am employed, any false statements on this application may be grounds for dismissal. I further certify that I have completed this application myself and understand that any omission or falsification on this application by myself maybe grounds for discharge regardless of time elapsed before discovery of omission/falsification. I authorize investigation of all statements contained in this application. I also grant permission to contact all references listed above, and authorize them to release all information concerning my previous employment and any other pertinent information these references might have, personal or otherwise. I release all parties from all liability for any damage that may result from furnishing this information to you. I understand and agree that INFINITY PROTECTION. may obtain or have prepared a consumer/investigative consumer report concerning my prior employment, military record, education, credit worthiness, or credit standing, credit capacity, character, general reputation, personal characteristics, or criminal background. By signing below, I authorize INFINITY PROTECTION to obtain such a report. I understand and agree that I may be asked to submit to pre-employment tests (including a drug test) upon a conditional offer of employment. I understand and agree that, if hired, my employment is for no definite period and may be terminated at any time and without prior notice. I understand that nothing in this application constitutes an employment contract. If employed, I will abide by all INFINITY PROTECTION, rules and procedures</label>
@@ -789,8 +789,10 @@
 		  }
 		  if (n == (x.length - 1)) {
 			document.getElementById("nextBtn").innerHTML = "Send Application";
+			document.getElementById("nextBtn").setAttribute("disabled", "1");
 		  } else {
 			document.getElementById("nextBtn").innerHTML = "Next";
+			document.getElementById("nextBtn").removeAttribute("disabled");
 		  }
 		  //... and run a function that will display the correct step indicator:
 		  fixStepIndicator(n)
@@ -970,6 +972,19 @@
 				}
 			}
 		});
+
+		// required checkbox
+		 $(document).on('change', '#customCheckbox8', function() {
+        if(this.checked) {
+          $("#nextBtn").removeAttr("disabled");
+          
+        }
+        else{
+             $("#nextBtn").attr("disabled","1");
+            
+        }	
+		
+      });
 
 	});
 	</script>

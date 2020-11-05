@@ -781,8 +781,10 @@
 		  }
 		  if (n == (x.length - 1)) {
 			document.getElementById("nextBtn").innerHTML = "Send Application";
+			document.getElementById("nextBtn").setAttribute("disabled", "1");
 		  } else {
 			document.getElementById("nextBtn").innerHTML = "Next";
+			document.getElementById("nextBtn").removeAttribute("disabled");
 		  }
 		  //... and run a function that will display the correct step indicator:
 		  fixStepIndicator(n)
@@ -961,6 +963,15 @@
 					$("#license_suspend_details").removeClass("required");
 				}
 			}
+		});
+
+		// required checkbox
+		$(document).on('change', '#customCheckbox8', function() {
+        	if(this.checked) {
+          		$("#nextBtn").removeAttr("disabled");
+        	} else {
+            	$("#nextBtn").attr("disabled","1");
+        	}
 		});
 
 	});
