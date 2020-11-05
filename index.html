@@ -40,13 +40,13 @@
 			<div class="row">
 				
 				<div class="col-md-12">
-					<div class="multi-step-form-wrapper">
+					<div class="multi-step-form-wrapper" style="background: #b2bec3;">
 						<h3 class="form-badge">Career</h3>
 						<div class="form-details">
 							<p>Thank you for your interest. We are actively seeking licensed quality security officers for employment. Please fill out the form below and we will contact you regarding employment opportunities.</p>
 							<p></p><strong>All positions require a Security License from your respected State where you are seeking employment.</strong></p>
 						</div>
-						<form action="" id="regForm">
+						<form action="" id="regForm" style="background: #fdcb6e;">
 							<!-- <div class="form-progress">
 								<p>Step 1 of 8</p>
 								<div class="progress">
@@ -140,7 +140,7 @@
 										<label class="custom-control-label" for="customRadio1">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio2" name="current_security_license" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio2" name="current_security_license" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio2">No</label>
 									</div>
 								</div>
@@ -151,7 +151,7 @@
 										<label class="custom-control-label" for="customRadio3">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio4" name="armed_license" value="No" class="custom-control-input armed-custom-input">
+										<input type="radio" id="customRadio4" name="armed_license" value="No" class="custom-control-input armed-custom-input" checked>
 										<label class="custom-control-label" for="customRadio4">No</label>
 									</div>
 									<div class="form-row sr-only" id="armed_extra">
@@ -173,7 +173,7 @@
 									</div>
 									<div class="custom-control custom-radio">
 										<input type="radio" id="customRadio6" name="unarmed_license" value="No" class="custom-control-input unarmed-custom-input">
-										<label class="custom-control-label" for="customRadio6">No</label>
+										<label class="custom-control-label" for="customRadio6" checked>No</label>
 									</div>
 									<div class="form-row sr-only" id="unarmed_extra">
 										<div class="form-group col-md-6">
@@ -189,7 +189,7 @@
 								<div class="form-group">
 									<label for="" class="main-label">Are you 18 years old or older?</label>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio7" name="years_18" value="Yes" class="custom-control-input">
+										<input type="radio" id="customRadio7" name="years_18" value="Yes" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio7">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
@@ -200,7 +200,7 @@
 								<div class="form-group">
 									<label for="" class="main-label">Are you legally eligible to work in the U.S.? (Hire will be subject to verification of eligibility.)</label>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio9" name="eligible_usa" value="Yes" class="custom-control-input">
+										<input type="radio" id="customRadio9" name="eligible_usa" value="Yes" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio9">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
@@ -215,7 +215,7 @@
 										<label class="custom-control-label" for="customRadio11">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio12" name="worked_school" value="No" class="custom-control-input custom-worked-school">
+										<input type="radio" id="customRadio12" name="worked_school" value="No" class="custom-control-input custom-worked-school" checked>
 										<label class="custom-control-label" for="customRadio12">No</label>
 									</div>
 									<div class="form-group sr-only" id="worked_school_extra">
@@ -230,7 +230,7 @@
 										<label class="custom-control-label" for="customRadio13">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio14" name="worked_company" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio14" name="worked_company" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio14">No</label>
 									</div>
 								</div>
@@ -241,12 +241,12 @@
 										<label class="custom-control-label" for="customRadio15">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio16" name="crime" value="No" class="custom-control-input custom-crime-input">
+										<input type="radio" id="customRadio16" name="crime" value="No" class="custom-control-input custom-crime-input" checked>
 										<label class="custom-control-label" for="customRadio16">No</label>
 									</div>
 									<div class="form-group sr-only" id="crime_extra">
 										<label for="" class="main-label">If yes, give details, including date(s)</label>
-										<textarea class="form-control" rows="4" id="crime_details"></textarea>
+										<textarea name="crime_details" class="form-control" rows="4" id="crime_details"></textarea>
 									</div>
 								</div>
 							</div>
@@ -257,15 +257,15 @@
 								<div class="form-group">
 									<label for="" class="main-label">Position Desired</label>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio17" name="desired_position" value="Full Time" class="custom-control-input">
+										<input type="radio" id="customRadio17" name="desired_position2" value="Full Time" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio17">Full Time</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio18" name="desired_position" value="Part Time" class="custom-control-input">
+										<input type="radio" id="customRadio18" name="desired_position2" value="Part Time" class="custom-control-input">
 										<label class="custom-control-label" for="customRadio18">Part Time</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio19" name="desired_position" value="On Call" class="custom-control-input">
+										<input type="radio" id="customRadio19" name="desired_position2" value="On Call" class="custom-control-input">
 										<label class="custom-control-label" for="customRadio19">On Call</label>
 									</div>
 								</div>
@@ -298,34 +298,34 @@
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">How did you learn about INFINITY PROTECTION Security (please be detailed)?</label>
-									<textarea name="" class="form-control" rows="4"></textarea>
+									<textarea name="learncompnay" class="form-control" rows="4"></textarea>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Are you currently under a non-compete agreement with a previous employer?</label>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio20" name="unarmed_license" value="Yes" class="custom-control-input custom-previous-employer">
+										<input type="radio" id="customRadio20" name="non_compete" value="Yes" class="custom-control-input custom-previous-employer">
 										<label class="custom-control-label" for="customRadio20">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio21" name="unarmed_license" value="No" class="custom-control-input custom-previous-employer">
+										<input type="radio" id="customRadio21" name="non_compete" value="No" class="custom-control-input custom-previous-employer">
 										<label class="custom-control-label" for="customRadio21">No</label>
 									</div>
 									<div class="form-row sr-only" id="previous_employer_extra">
 										<div class="form-group col-md-6">
 											<label for="" class="main-label">If so, the agreement is with</label>
-											<input type="text" class="form-control" id="agreement_with">
+											<input name="agreement_with" type="text" class="form-control" id="agreement_with">
 										</div>
 										<div class="form-group col-md-6">
 											<label for="" class="main-label">For the duration of</label>
-											<input type="text" class="form-control" id="agreement_duration">
+											<input name="agreement_duration" type="text" class="form-control" id="agreement_duration">
 										</div>
 										<div class="form-group col-md-6">
 											<label for="" class="main-label">Starting on</label>
-											<input type="text" class="form-control" id="agreement_starting">
+											<input name="agreement_starting" type="text" class="form-control" id="agreement_starting">
 										</div>
 										<div class="form-group col-md-6">
 											<label for="" class="main-label">And ending on</label>
-											<input type="text" class="form-control" id="agreement_ending">
+											<input name="agreement_ending" type="text" class="form-control" id="agreement_ending">
 										</div>
 									</div>
 								</div>
@@ -352,11 +352,11 @@
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">What degrees/majors did you obtained or programs did you study?</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="degree_obtained" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Other education or training</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="other_training" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Military Experience</label>
@@ -365,22 +365,22 @@
 										<label class="custom-control-label" for="customRadio22">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio23" name="military_experience" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio23" name="military_experience" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio23">No</label>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-4">
 										<label for="" class="main-label">Dates Served</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="dates_served" class="form-control">
 									</div>
 									<div class="form-group col-md-4">
 										<label for="" class="main-label">Branch of Service</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="branch_of_service" class="form-control">
 									</div>
 									<div class="form-group col-md-4">
 										<label for="" class="main-label">Rank at Discharge</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="rank_at_discharge" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
@@ -390,7 +390,7 @@
 										<label class="custom-control-label" for="customRadio24">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio25" name="driver_license" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio25" name="driver_license" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio25">No</label>
 									</div>
 								</div>
@@ -401,12 +401,12 @@
 										<label class="custom-control-label" for="customRadio26">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio27" name="license_revoked" value="No" class="custom-control-input custom-license-suspend">
+										<input type="radio" id="customRadio27" name="license_revoked" value="No" class="custom-control-input custom-license-suspend" checked>
 										<label class="custom-control-label" for="customRadio27">No</label>
 									</div>
 									<div class="form-group sr-only" id="license_extra">
 										<label for="" class="main-label">If yes please explain</label>
-										<textarea class="form-control" rows="4" id="license_suspend_details"></textarea>
+										<textarea name="license_revoked_explain" class="form-control" rows="4" id="license_suspend_details"></textarea>
 									</div>
 								</div>
 							</div>
@@ -419,79 +419,79 @@
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Employer #1</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Type of business</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_business" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Phone</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer1_phone" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="inputAddress" class="main-label">Address</label>
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer1_street" class="form-control">
 									<small class="form-text text-muted">Street Address</small>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer1_address_line2" class="form-control">
 									<small class="form-text text-muted">Address line 2</small>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer1_city" class="form-control">
 										<small class="form-text text-muted">City</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer1_state" class="form-control">
 										<small class="form-text text-muted">State / Province  / Region</small>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer1_zip" class="form-control">
 										<small class="form-text text-muted">Zip Code</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
-										<small class="form-text text-muted">County</small>
+										<input type="text" name="emplyer1_country" class="form-control">
+										<small class="form-text text-muted">Country</small>
 									</div>
 								</div>								
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Position held</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_position_held" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Suervisor name</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_suevisor_name" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date started</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_date_started" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date ended</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_date_ended" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage start</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_wage_start" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage end</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer1_wage_end" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Reason for leaving</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer1_reason_leaving" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">May we contact?</label>
@@ -500,7 +500,7 @@
 										<label class="custom-control-label" for="customRadio28">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio29" name="may_contact_1" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio29" name="may_contact_1" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio29">No</label>
 									</div>
 								</div>
@@ -512,79 +512,79 @@
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Employer #2</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Type of business</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_business" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Phone</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer2_phone" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="inputAddress" class="main-label">Address</label>
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer2_street" class="form-control">
 									<small class="form-text text-muted">Street Address</small>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer2_address_line2" class="form-control">
 									<small class="form-text text-muted">Address line 2</small>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer2_city" class="form-control">
 										<small class="form-text text-muted">City</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer2_state" class="form-control">
 										<small class="form-text text-muted">State / Province  / Region</small>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer2_zip" class="form-control">
 										<small class="form-text text-muted">Zip Code</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer2_country" class="form-control">
 										<small class="form-text text-muted">County</small>
 									</div>
 								</div>								
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Position held</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_position_held" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Suervisor name</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_suevisor_name" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date started</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_date_started" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date ended</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_date_ended" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage start</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_wage_start" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage end</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer2_wage_end" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Reason for leaving</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer2_reason_leaving" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">May we contact?</label>
@@ -593,7 +593,7 @@
 										<label class="custom-control-label" for="customRadio30">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio31" name="may_contact_2" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio31" name="may_contact_2" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio31">No</label>
 									</div>
 								</div>
@@ -605,79 +605,79 @@
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Employer #3</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Type of business</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_business" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Phone</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer3_phone" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="inputAddress" class="main-label">Address</label>
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer3_street" class="form-control">
 									<small class="form-text text-muted">Street Address</small>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control">
+									<input type="text" name="emplyer3_address_line2" class="form-control">
 									<small class="form-text text-muted">Address line 2</small>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer3_city" class="form-control">
 										<small class="form-text text-muted">City</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer3_state" class="form-control">
 										<small class="form-text text-muted">State / Province  / Region</small>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer3_zip" class="form-control">
 										<small class="form-text text-muted">Zip Code</small>
 									</div>
 									<div class="form-group col-md-6">
-										<input type="text" class="form-control">
+										<input type="text" name="emplyer3_country" class="form-control">
 										<small class="form-text text-muted">County</small>
 									</div>
 								</div>								
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Position held</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_position_held" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Suervisor name</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_suevisor_name" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date started</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_date_started" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Date ended</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_date_ended" class="form-control">
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage start</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_wage_start" class="form-control">
 									</div>
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Wage end</label>
-										<input type="text" name="" class="form-control">
+										<input type="text" name="emplyer3_wage_end" class="form-control">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Reason for leaving</label>
-									<input type="text" name="" class="form-control">
+									<input type="text" name="emplyer3_reason_leaving" class="form-control">
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">May we contact?</label>
@@ -686,7 +686,7 @@
 										<label class="custom-control-label" for="customRadio32">Yes</label>
 									</div>
 									<div class="custom-control custom-radio">
-										<input type="radio" id="customRadio33" name="may_contact_3" value="No" class="custom-control-input">
+										<input type="radio" id="customRadio33" name="may_contact_3" value="No" class="custom-control-input" checked>
 										<label class="custom-control-label" for="customRadio33">No</label>
 									</div>
 								</div>
@@ -696,22 +696,22 @@
 							<!-- Step Eight Start -->
 							<div class="tab step-eight">
 								<div class="form-group">
-									<label for="" class="main-label">Graduated from (check all that apply)</label>
+									<label for="" class="main-label">From (check all that apply)</label>
 									<div class="custom-control custom-checkbox">
-										<input type="checkbox" id="customCheckbox8" name="agreement" value="Agreements" class="custom-control-input">
+										<input type="checkbox" id="customCheckbox8" name="agreement" value="Agreements" class="custom-control-input required" required>
 										<label class="custom-control-label" for="customCheckbox8">I certify that the facts contained in this application are true and complete to the best of my knowledge. I understand that if I am employed, any false statements on this application may be grounds for dismissal. I further certify that I have completed this application myself and understand that any omission or falsification on this application by myself maybe grounds for discharge regardless of time elapsed before discovery of omission/falsification. I authorize investigation of all statements contained in this application. I also grant permission to contact all references listed above, and authorize them to release all information concerning my previous employment and any other pertinent information these references might have, personal or otherwise. I release all parties from all liability for any damage that may result from furnishing this information to you. I understand and agree that INFINITY PROTECTION. may obtain or have prepared a consumer/investigative consumer report concerning my prior employment, military record, education, credit worthiness, or credit standing, credit capacity, character, general reputation, personal characteristics, or criminal background. By signing below, I authorize INFINITY PROTECTION to obtain such a report. I understand and agree that I may be asked to submit to pre-employment tests (including a drug test) upon a conditional offer of employment. I understand and agree that, if hired, my employment is for no definite period and may be terminated at any time and without prior notice. I understand that nothing in this application constitutes an employment contract. If employed, I will abide by all INFINITY PROTECTION, rules and procedures</label>
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="main-label">Today's date<span>*</span></label>
-									<input type="text" name="" class="form-control required" required>
+									<input type="text" name="todays_date" class="form-control required" required>
 								</div>
 								<div class="form-row mb-5">
 									<div class="form-group col-md-6">
 										<label for="" class="main-label">Applicant Digital Signature (Type Your Full Legal Name)<span>*</span></label>
 										<div id="signature-pad" class="signature-pad">
 											<div class="signature-pad--body">
-												<canvas></canvas>
+												<canvas width="386" height="185"></canvas>
 												<button type="button" class="btn my-btn button clear" data-action="clear">Clear</button>
 											</div>
 										</div>
