@@ -965,14 +965,23 @@
 			}
 		});
 
-		// required checkbox
+		// required checkbox1
 		$(document).on('change', '#customCheckbox8', function() {
-        	if(this.checked) {
-          		$("#nextBtn").removeAttr("disabled");
-        	} else {
-            	$("#nextBtn").attr("disabled","1");
-        	}
-		});
+        	if(this.checked && $('#customCheckbox9').is(':checked')) {
+	          $("#nextBtn").removeAttr("disabled");      
+	        } else {
+	            $("#nextBtn").attr("disabled","1");  
+	        }
+	    });
+
+		 // required checkbox2
+		 $(document).on('change', '#customCheckbox9', function() {
+        	if(this.checked && $('#customCheckbox8').is(':checked')) {
+	        	$("#nextBtn").removeAttr("disabled"); 
+	        } else {
+	            $("#nextBtn").attr("disabled","1");  
+	        }
+	    });
 
 	});
 	</script>
